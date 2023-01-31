@@ -1,22 +1,31 @@
 import 'dotenv/config'
-import * as express from "express";
-import * as http from "http";
-import bodyParser from "body-parser";
+import readline from 'readline'
 
-const app = express.default();
+import express from 'express'
 
-app.use(bodyParser.json());
+import generateMap from './generator'
 
-app.get("/", (_req, res) => {
-    console.info("Request received")
-    res.send({ uptime: process.uptime() });
-});
+const app = express()
 
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
 
-const server = http.createServer(app);
+app.get('/map', (req, res) => {
+    // get width, height, count from query
+    const w = parseInt(req.query.w as string) || 20
+    const h = parseInt(req.query.h as string) || 20
+    const count = parseInt(req.query.count as string) || 10
+    const seed = req.query.seed || 'seed'
 
+    console.log(`w: ${w}, h: ${h}, count: ${count} seed: ${seed}`)
+    console.log(req.query)
 
+    const gm = generateMap(w, h, count, seed)
 
-server.listen(4040, () => {
-    console.info("Server started")
-});
+    res.send(gm)
+})
+
+app.listen(process.env.PORT || 3000, () => {
+    console.log('Server is running...')
+})
