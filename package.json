@@ -1,6 +1,7 @@
 {
     "dependencies": {
         "@kurishutofu/game-module": "^0.1.2",
+        "@kurishutofu/geometry-generator": "^0.0.3",
         "body-parser": "^1.20.0",
         "brain": "^1.0.0",
         "chalk": "4",

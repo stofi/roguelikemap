@@ -2,10 +2,10 @@ import * as THREE from 'three'
 
 import { v4 as uuidv4 } from 'uuid'
 
-import GameMap from 'game-module'
-import { MapDualTile } from 'game-module'
+import GameMap from '@kurishutofu/game-module'
+import { MapDualTile } from '@kurishutofu/game-module'
 
-import GeometryGenerator from './Geometry'
+import GeometryGenerator from '@kurishutofu/geometry-generator'
 
 const wallColor = new THREE.Color(0xff0000)
 
