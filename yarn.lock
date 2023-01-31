@@ -36,6 +36,16 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@kurishutofu/game-module@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@kurishutofu/game-module/-/game-module-0.1.2.tgz#e0ab3a8c71200c43cb40a70c0d60c8b6a8b17e5f"
+  integrity sha512-IFgOpRtPgndgI1jeBrD4XQRBOVUvbIjslwNNjZx2N+jbtqcvtZp+Mw0jj6nDmuP3aBC2lD0HAASHEtYHjFYgTA==
+  dependencies:
+    crypto-js "^4.1.1"
+    seed-random "^2.2.0"
+    three "^0.149.0"
+    uuid "^9.0.0"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -1106,16 +1116,6 @@ function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
-
-game-module@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/game-module/-/game-module-0.1.2.tgz#4ee579ce8ca12645f308f5b4ba085ca896ebac25"
-  integrity sha512-rqkAE0qTE63cVhjvGkjv21kZYfbAmLbDu5G6fGN9EP3OhNKMsuIJp68NlDUNLL5iVU9aovabcECEsRvg9HtDUQ==
-  dependencies:
-    crypto-js "^4.1.1"
-    seed-random "^2.2.0"
-    three "^0.149.0"
-    uuid "^9.0.0"
 
 get-intrinsic@^1.0.2:
   version "1.1.1"

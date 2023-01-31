@@ -16,7 +16,7 @@ app.get('/map', (req, res) => {
     const w = parseInt(req.query.w as string) || 20
     const h = parseInt(req.query.h as string) || 20
     const count = parseInt(req.query.count as string) || 10
-    const seed = req.query.seed || 'seed'
+    const seed = (req.query.seed as string) || 'seed'
 
     console.log(`w: ${w}, h: ${h}, count: ${count} seed: ${seed}`)
     console.log(req.query)
