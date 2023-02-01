@@ -21,9 +21,14 @@ app.get('/map', (req, res) => {
     console.log(`w: ${w}, h: ${h}, count: ${count} seed: ${seed}`)
     console.log(req.query)
 
-    const gm = generateMap(w, h, count, seed)
+    try {
+        const gm = generateMap(w, h, count, seed)
+        res.send(gm)
+    } catch (e) {
+        console.log(e)
 
-    res.send(gm)
+        res.send(e)
+    }
 })
 
 app.listen(process.env.PORT || 3000, () => {

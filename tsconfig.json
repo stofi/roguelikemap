@@ -21,7 +21,7 @@
     ],
     "allowJs": true,
     "outDir": "build",
-    "rootDir": "src",
+    // "rootDir": "src",
     "strict": true,
     "noImplicitAny": true,
     "esModuleInterop": true,

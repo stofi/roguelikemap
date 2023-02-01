@@ -46,10 +46,10 @@
     three "^0.149.0"
     uuid "^9.0.0"
 
-"@kurishutofu/geometry-generator@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@kurishutofu/geometry-generator/-/geometry-generator-0.0.3.tgz#331c322c63fdff3037b2e62a470e31ca0a0ce533"
-  integrity sha512-lPd3Cf1uZ1Cee/FkOX51hVrEn3RBNtRTBexFinsLXZmjm1qIo+6qyCgwgMIMWLx8vDqYSrmn5uU85XdbotJFPQ==
+"@kurishutofu/geometry-generator@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@kurishutofu/geometry-generator/-/geometry-generator-0.1.5.tgz#034a6eb86336cfd570c7ed4851b93b4f3deb3224"
+  integrity sha512-HT3/gUbArjrolzUTKNbOwYjv+NsyfeaIV8CuZVz3jhWEma4l5eIWY33i/c5YYDb0fIx5PzF6JI6Bw0QDJt5Sdg==
   dependencies:
     three "^0.149.0"
     uuid "^9.0.0"

@@ -7,6 +7,8 @@ import { MapDualTile } from '@kurishutofu/game-module'
 
 import GeometryGenerator from '@kurishutofu/geometry-generator'
 
+import chalk from 'chalk'
+
 const wallColor = new THREE.Color(0xff0000)
 
 export default function generateMap(
@@ -16,6 +18,7 @@ export default function generateMap(
     seed?: string,
     maxIterations = 1000
 ) {
+    console.time('generate')
     const getMap = (count: number) => {
         const gm = new GameMap(w, h, count, seed)
 
@@ -272,6 +275,7 @@ export default function generateMap(
     }
 
     geo.setAttribute('position', new THREE.BufferAttribute(gg.positions, 3))
+    console.log(chalk.bgRed.black('SMOKE'))
 
     geo.setAttribute('color', new THREE.BufferAttribute(gg.colors, 3))
 
@@ -285,6 +289,7 @@ export default function generateMap(
     geo.attributes.uv.needsUpdate = true
     geo.attributes.faceIndex.needsUpdate = true
 
+    console.timeEnd('generate')
     return {
         geo: geo.toJSON(),
         map: GameMap.toJSON(gm),
